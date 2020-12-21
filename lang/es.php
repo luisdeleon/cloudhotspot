@@ -2,15 +2,15 @@
 $langid="es"; 
 $langname = "Spanish";
 $language = "Language";
-// Translator Fernando Sepulveda
+// Translator Luis DeLeon - luis@wisp.online
 $_about = "Acerca";
 $_action = "Acción";
-$_add = "Anadir Usuarios";
+$_add = "Añadir Usuarios";
 $_add_router = "Añadir Router";
 $_add_user = "Añadir Usuario";
 $_add_user_profile = "Añadir Perfil";
 $_admin = "Admin";
-$_admin_settings = "Configuración de administrador";
+$_admin_settings = "Administración";
 $_all = "Todo";
 $_auto_reload = "Carga automática";
 $_bluetooth_ac = "Imprimir código de acceso BT";
@@ -28,9 +28,10 @@ $_dashboard = "Tablero";
 $_data_limit = "Limite de Datos";
 $_date ="Fecha";
 $_days = "Días";
+$_day = "Día";
 $_delete_data = "Borrar datos";
 $_delete = "Eliminar";
-$_dhcp_leases = "Arrendamientos DHCP";
+$_dhcp_leases = "Clientes DHCP";
 $_dns_name = "Nombre DNS";
 $_edit = "Editar";
 $_edit_user = "Editar Usuarios";
@@ -39,10 +40,10 @@ $_expired = "Expirado";
 $_expired_mode = "Modo Expirado";
 $_extend_expired_date = "Extender fecha de vencimiento";
 $_format_file_name = "Formatear nombre de archivo";
-$_free_hdd = "Libre HDD";
+$_free_hdd = "HDD Libre";
 $_free_memory = "Memoria Libre";
 $_generate_code = "Generar Código";
-$_generate = "Generar Voucher";
+$_generate = "Generar Fichas";
 $_generate_user = "Generar Usuario";
 $_grace_period = "Período de Gracia";
 $_help = "Ayuda";
@@ -53,6 +54,7 @@ $_hotspot_log = "Hotspot Log";
 $_hotspot_name = "Nombre Hotspot";
 $_hotspot_users = "Usuarios Hotspot";
 $_hours = "horas";
+$_hour = "hora";
 $_income = "Ingresos";
 $_idle_timeout = "Tiempo de inactividad";
 $_interface = "Inteface";
@@ -60,7 +62,7 @@ $_ip_bindings = "IP Bindings";
 $_last_generate = "Ultimos Generados";
 $_list_logo = "Lista Logo";
 $_live_report = "Reporte en Vivo";
-$_loading = "Cargando";
+$_loading = "¡Procesando, por favor no interrumpir la tarea! En un sistema satelital, puede tomar hasta 5min.";
 $_loading_interface = "Cargando Interface";
 $_loading_theme = "Cargando theme";
 $_lock_user = "Bloquear Usuario";
@@ -70,11 +72,12 @@ $_messages = "Mensajes";
 $_min = "min";
 $_minutes = "minutos";
 $_model = "Modelo";
+$_month = "Mes";
 $_name = "Nombre";
 $_no = "No";
 $_open = "Abrir";
 $_package = "Paquete";
-$_password = "Password";
+$_password = "Contraseña";
 $_please_login = "Por Favor Inicia Sesión";
 $_ppp_active = "PPP Activos";
 $_ppp_profiles = "Perfiles PPP";
@@ -85,7 +88,7 @@ $_print_default = "Por Defecto";
 $_print = "Imprimir";
 $_print_qr = "QR";
 $_print_small = "Pequeña";
-$_processing = "Procesando...";
+$_processing = "Procesando, no interrunpir la tarea!";
 $_profile = "Perfil";
 $_qty = "Cantidad";
 $_quick_print = "Impresión rápida";
@@ -97,7 +100,7 @@ $_remove = "Eliminar";
 $_report = "Reporte";
 $_reset_start_date = "Restablecer fecha de inicio";
 $_resume = "Resumen";
-$_router_list = "Lista de Router";
+$_router_list = "Lista de Routers";
 $_save = "Guardar";
 $_search = "Buscar";
 $_sec = "sec";
@@ -109,7 +112,7 @@ $_selling_report = "Informe de ventas";
 $_send_to_WA = "Enviar a WhatsApp";
 $_session_name = "Nombre de la Sesión";
 $_session = "Sesión";
-$_session_settings = "Configuración de Sesión";
+$_session_settings = "Sesiones";
 $_settings = "Ajustes";
 $_share = "Compartir";
 $_show_all = "Mostrar Todo";
@@ -128,25 +131,26 @@ $_time = "Hora";
 $_today = "Hoy";
 $_total = "Total";
 $_traffic_interface = "Interfaz de tráfico";
-$_traffic_monitor = "Trafico Monitor";
+$_traffic_monitor = "Monitor de Tráfico";
 $_traffic = "Trafico";
 $_upload = "Cargar";
 $_upload_logo = "Cargar Logo";
 $_uptime = "Actividad";
 $_uptime_user = "Actividad";
 $_user_length = "Longitud del Codigo";
-$_user_list = "Lista de Usuarios";
+$_user_list = "Usuarios Hotspot";
 $_user_log = "Usuarios Log";
 $_user_mode = "Modo Usuarios";
 $_user_name = "Usuario";
-$_user_pass = "Usuario & Password";
-$_user_profile_list = "Lista de Perfiles";
+$_user_pass = "Usuario & Contraseña";
+$_user_profile_list = "Perfiles Hotspot";
 $_user_profile = "Perfil del Usuario";
 $_users = "Usuarios";
-$_user_user = "Usuario = Password";
+$_user_user = "Usuario = Contraseña";
 $_validity = "Validez";
-$_voucher_code ="Codigo Voucher";
-$_vouchers = "Vouchers";
+$_voucher_code ="Codigo de Ficha";
+$_vouchers = "Fichas";
+$_week = "Semana";
 $_yes = "Si";
 
 
@@ -155,31 +159,37 @@ $_yes = "Si";
 
 //details
 $_format_time_limit = '
-    Formato '.$_time_limit.'.<br>
-    [wdhm] Ejemplo : 30d = 30'.$_days.', 12h = 12'.$_hours.', 4w3d = 31'.$_days.'.
+    Dejar en blanco '.$_time_limit.' para ficha corrida.<br>
+	Colocar '.$_time_limit.' para generar ficha pausada.<br>
+    [wdhm] Ejemplo : 1h = 1'.$_hour.', 1d = 1'.$_day.', 1w = 1'.$_week.', 4w2d = 1'.$_month.'.
 ';
 $_details_add_user = '
-    '.$_add_user.' with '.$_time_limit.'.<br>
-    Should '.$_time_limit.' < '.$_validity.'.
+    Al '.$_add_user.' con '.$_time_limit.'.<br>
+    El '.$_time_limit.' tiene que ser menor a '.$_validity.' del '.$_profile.'.
+	<h3 style="color:Tomato;">¡Importante!</h3>
+	<p>Al presionar Generar Fichas, la tarea puede llegar a tomar hasta 5 minutos. Por favor espera que la tarea sea completada. Todo esto depende de la calidad de tu internet y característica técnicas de tu Mikrotik. Especialmente si te encuentras en un sistema satelital, la latencia llega a tener hasta 700ms. El sistema lee por API la configuración de tu Mikrotik en tiempo real, una vez completada la tarea puedes revisar las fichas creadas en Usuarios Hotspot.</p>
 ';
 
 $_details_user_profile = '
 '.$_expired_mode.' Es el control para el usuario del hotspot.<br>
-Opciones : Eliminar, aviso, Eliminar y registrar, Aviso y registrar.
+Opciones : Eliminar, Aviso, Eliminar y Registrar, Aviso y Registrar.
 <ul>
-<li>Eliminar: El usuario será eliminado cuando  expire..</li>
-<li>Naviso: El usuario no se eliminará y recibirá una notificación después de la expiración del usuario.</li>
-<li>Registrar: Guardar el precio de cada usuario de inicio de sesión. Para calcular las ventas totales de usuarios de hotspot..</li>
+<li>Remove: El usuario será eliminado cuando expire.</li>
+<li>Notice: El usuario no se eliminará y recibirá una notificación después de la expiración del usuario.</li>
+<li>Record: Guardar el precio de cada usuario de inicio de sesión. Para calcular las ventas totales de usuarios de hotspot.</li>
 </ul>
 </p>
-        
-        <p>'.$_lock_user.' : El nombre de usuario solo se puede utilizar en 1 dispositivo.</p>
+        <p>Para generar fichas pausadas seleccionar cualquier '.$_expired_mode.' y colocar la '.$_validity.' y al momento de generar fichas cololcar '.$_time_limit.'.</p>
+		<p>Para generar fichas corridas seleccionar cualquier '.$_expired_mode.' y colocar la '.$_validity.' y al momento de generar fichas dejar en blanco '.$_time_limit.'.</p>
 ';
 
 $_format_validity = '
-Formato '.$_validity.'<br>
-[wdhm] Ejemplo : 30d = 30'.$_days.', 12h = 12'.$_hours.', 30m = 30'.$_minutes.'<br>
-5'.$_hours.' 30'.$_minutes.' = 5h30m';
+'.$_validity.':<br>
+Recuerda la '.$_validity.' es la vida útil de la ficha. Ejemplo: '.$_validity.' de 1d, la ficha se borrará del sistema 1 día después de haber sido ingresada por primera vez. Combinado '.$_validity.' con '.$_time_limit.', podrás generar fichas pausadas. Ejemplo: '.$_validity.' 1d y '.$_time_limit.' 1h (al generar fichas), la ficha tendrá un límite de navegación de 1 hora pausados y puede ser utilizada por 1 día desde haber sido ingresada por primera vez.<br>
+    [wdhm] Ejemplo : 1h = 1'.$_hour.', 1d = 1'.$_day.', 1w = 1'.$_week.', 4w2d = 1'.$_month.'.
+	<p>'.$_lock_user.':<br>
+	El nombre de usuario solo se puede utilizar en 1 dispositivo.<br>Recomendamos Disable.</p>
+';
 
 $_format_ip_binding = '
     Formato Upload/Download Max Limite<br>
@@ -195,7 +205,7 @@ $_help_report = '
 	<img width="70%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATUAAAAsCAYAAAAEsS/jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVHhe7d09TtxAGMbxnCYSKOJDCggtqZIqHCRVpFwDiYJj0MARIq2i5QQUW6RH0CJST/x6bM/YM7Z38cfi1//iJ2F7PCvGfp+ZYQs+nH+7MACgBaEGQBVCDYAqhBoAVQg1AKoQagBUaQy1xdfv0fMA8F7VhtrBycLsH382Hz8dYgf2jxh74C2ioXZ4ujB7SVEdn33BjuQPKHYNmJtt6iEINdlyygrt+Ow8aIzxEGqA0ynUBMW0e4Qa4BBqChBqgEOoKUCoAQ6hpgChBjiEmgKEGuAQagoQaoBDqClAqAHOiKF2bZZP/8zLa+jhNtYem+oUardr8/J0by5j14AJGj3UggC7ujePBFsnhBrg7D7UhBTW69rc5MdZ0LnV3LNZXtlrN+vkeH3n3W/7fVxde+em7ffyj/e7W3Iu1lb0GmoNY2+vrc1y9eyue/deyvlSQN6Zh6SNe+bhat09N2nr9f3016yD51rtD3MwZD0MF2rpy5oVT7ByywohL5ZoAHrHCvz4+St4iHIu1lb0FmptY58HXjGp2JDJg6c51LK+vAkpbV+Epm0bXPf7Y1U5S0PWw4Ch1nSt+nKXZ+v0WmnlpoM/OzXNSqK3UIsojX0aat7KLeGvnIMQqjyrQKm/SNvK58lnaVqRY3ND1cPIoZbN3DmvWPyXW36uLZoJ82enpllJ9B9qNWPfU6il9xT9N4Ra6b2Qn8ufjfkYqh7G2X56BVW7rSkKUdrq2nr6ZEZqm5VEf6HWMvYdQ60Is2h/5ba5tE/pX9qW+sbcDFEP43xREFk5xIslKYZV0lbh1jMnM1LbrCS2eYhFSOTn/PFuG/tOoZY9M3+ltUGo2Tb2CwS2nvM2RD0ME2rpS+ud9wOuOPZm90w+60dDcma2eYjV8fVDqXXsW0LNtnfX05ArnlE1tOxx8/ZT2Pem9C0s0GD0UEuLpCR8WYttipCCqhRLqlqAM7ZVqCWC8W265o99W6hV7n9c3ZUnsjwkU9KPDTK7AqsLtdgKEKg3Yqj1TArE30bN2LahNjUSamw9sanJhpqsCGKz+hzpDjVZ4YereaDO9EIt+xscqzRHbahl21VWadjG9EINAbWhBrwBoaYAoQY4hJoChBrgEGoKEGqA0ynU3D8zjt+AcRBqgNMp1MTBycLsHfFf2neJUAOczqEmDk8X6Yot7wzj2k8mldh5AM1qQ03IVjR2HgDeq8ZQA4CpIdQAqEKoAVCFUAOgCqEGQBVCDYAiF+Y/bd3pxgv3MhEAAAAASUVORK5CYII=">
 	</li>
 	<li>Para filtros basados en'.$_prefix.', completar '.$_prefix.' en la entrada de búsqueda, luego haga clic en filtro.</li>
-	<li>Filtre en base a los comentarios, complete el !!Comentario en la columna Buscar y luego haga clic en filtro O haga clic en uno de los comentarios. (Mikhmon Online).</li>
+	<li>Filtre en base a los comentarios, complete el !!Comentario en la columna Buscar y luego haga clic en filtro O haga clic en uno de los comentarios.</li>
 		        <li>Se recomienda eliminar el informe de ventas después de descargar el informe CSV.</li>
 	</ul>
 ';
