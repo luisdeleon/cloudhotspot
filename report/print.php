@@ -151,7 +151,7 @@ if (!isset($_SESSION["mikhmon"])) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>.:: MIKHMON <?= $hotspotname; ?> ::.</title>
+		<title>.:: CloudHotspot <?= $hotspotname; ?> ::.</title>
 		<meta charset="utf-8">
 		<meta http-equiv="cache-control" content="private" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
