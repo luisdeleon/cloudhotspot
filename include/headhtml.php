@@ -32,7 +32,7 @@ error_reporting(0);
 		<meta name="theme-color" content="<?= $themecolor ?>" />
 		<!-- Font Awesome -->
 		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" />
-		<!-- Mikhmon UI -->
+		<!-- CloudHotspot UI -->
 		<link rel="stylesheet" href="css/mikhmon-ui.<?= $theme; ?>.min.css">
 		<!-- favicon -->
 		<link rel="icon" href="./img/favicon.png" />
