@@ -168,12 +168,16 @@ if($idleto != "disable"){
 ?>
 <span style="display:none;" id="idto"><?= $idleto ;?></span>
 
+<style type="text/css">
+  #brand{ display:none; }
+</style>
 
 <?php if ($id != "") { ?>
 
 <div id="navbar" class="navbar">
   <div class="navbar-left">
     <a id="brand" class="text-center" href="javascript:void(0)">MIKHMON</a>
+    <a class="text-center" href="."> CloudHotspot </a>
 
 <a id="openNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 <a id="closeNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
