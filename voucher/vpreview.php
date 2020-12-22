@@ -49,8 +49,8 @@ if (!isset($_SESSION["mikhmon"])) {
   }
 
  
-  $username = "mikhmon";
-  $password = "1234";
+  $username = "wisp.online";
+  $password = "123456";
   $timelimit = "6h";
   $getdatalimit = "1073741824";
   $comment = "test";
