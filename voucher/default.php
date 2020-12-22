@@ -73,7 +73,7 @@
 <!-- /  -->
     <tr>
       <!-- Price  -->
-      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
+      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px"><?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
 <!-- /  -->
     </tr>
     <tr>
