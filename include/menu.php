@@ -177,7 +177,7 @@ if($idleto != "disable"){
 <div id="navbar" class="navbar">
   <div class="navbar-left">
     <a id="brand" class="text-center" href="javascript:void(0)">MIKHMON</a>
-    <a class="text-center" href=".">.: CLOUDHOTSPOT :.</a>
+    <a class="text-center" href="javascript:void(0)">.: CLOUDHOTSPOT :.</a>
 
 <a id="openNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 <a id="closeNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
@@ -253,7 +253,7 @@ include('./info.php');
 <div id="navbar" class="navbar">
   <div class="navbar-left">
     <a id="brand" class="text-center" href="./?session=<?= $session; ?>">MIKHMON</a>
-
+    <a class="text-center" href="./?session=<?= $session; ?>">.: CLOUDHOSTSPOT :.</a>
 <a id="openNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 <a id="closeNav" class="navbar-hover" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 <a id="cpage" class="navbar-left" href="javascript:void(0)"><?= $mpage; ?></a>
