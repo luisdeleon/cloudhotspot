@@ -139,18 +139,7 @@ if (!isset($_SESSION["mikhmon"])) {
 						<td class="align-middle">Username  </td><td><input class="form-control" id="usermk" type="text" size="10" name="usermik" title="User MikroTik" value="<?= $userhost; ?>" required="1"/></td>
 					</tr>
 					<tr>
-						<td class="align-middle">Password  </td><td>
-							<div class="input-group">
-								<div class="input-group-11 col-box-10">
-        						<input class="group-item group-item-l" id="passmk" type="password" name="passmik" title="Password MikroTik" value="<?= decrypt($passwdhost); ?>" required="1"/>
-        						</div>
-            					<div class="input-group-1 col-box-2">
-            						<div class="group-item group-item-r pd-2p5 text-center align-middle">
-                						<input title="Show/Hide Password" type="checkbox" onclick="PassMk()">
-            						</div>
-            					</div>
-    						</div>
-						</td>
+						<td class="align-middle">Password  </td><td><input class="form-control" id="passmk" type="password" size="15" name="passmik" title="Password MikroTik" value="<?= decrypt($passwdhost); ?>" required="1"/></td>
 					</tr>
 					<tr>
 						<td colspan="2">
