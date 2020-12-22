@@ -35,7 +35,7 @@
           <td style="border: 1px solid black; font-weight:bold;"><?= $password; ?></td>
         </tr>
         <tr>
-          <td colspan="2" style="border: 1px solid black; font-weight:bold;"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
+          <td colspan="2" style="border: 1px solid black; font-weight:bold;"><?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
         </tr>
 <?php 
 } ?>
