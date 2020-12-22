@@ -46,49 +46,11 @@ if (!isset($_SESSION["mikhmon"])) {
         <h3><i class="fa fa-info-circle"></i> About</h3>
       </div>
       <div class="card-body">
-        <h3>MIKHMON V<?= $_SESSION['v']; ?></h3>
+        <h3>WISP.ONLINE V<?= $_SESSION['v']; ?></h3>
 <p>
-  Aplikasi ini dipersembahkan untuk pengusaha hotspot di manapun Anda berada.
-  Semoga makin sukses.
+	Any questions please contact support@wisp.online
 </p>
-<p>
-  <ul>
-    <li>
-      Author : Laksamadi Guko
-    </li>
-    <li>
-      Licence : <a href="https://github.com/laksa19/mikhmonv2/blob/master/LICENSE">GPLv2</a>
-    </li>
-    <li>
-      API Class : <a href="https://github.com/BenMenking/routeros-api">routeros-api</a>
-    </li>
-    <li>
-      Website : <a href="https://laksa19.github.io">laksa19.github.io</a>
-    </li>
-    <li>
-      Facebook : <a href="https://fb.com/laksamadi">fb.com/laksamadi</a>
-    </li>
-  </ul>
-</p>
-<p>
-  Terima kasih untuk semua yang telah mendukung pengembangan MIKHMON.
-</p>
-<div>
-    <i>Copyright &copy; <i> 2018 Laksamadi Guko</i></i>
 </div>
-</div>
-</div>
-</div>
-<div class="col-12">
-<div class="card">
-  <div class="card-header">
-  <h3><i class="fa fa-info-circle"></i> Changelog</h3>
-  </div>
-  <div class="card-body">
-  <div class="iFWrapper">
-    <iframe src="https://laksa19.github.io/mikhmonv3" ></iframe>
-  </div>
-  </div>
 </div>
 </div>
 </div>
